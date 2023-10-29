@@ -31,12 +31,7 @@ const Login = () => {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  // Handle form submission
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(formData);
-  // };
-
+ 
   return (
     <div className="flex flex-col h-[rem] sm:flex-row mx-[20px] justify-center align-center ">
       {/* Left side - Logo and company name */}
@@ -68,7 +63,7 @@ const Login = () => {
               name="email"
               autoComplete="email"
               required
-              className="my-4 block w-[17.4rem] px-4 py-2.5 border border-gray-500 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:border-[#080101] focus:z-10 sm:text-sm"
+              className="my-4 block w-full px-4 py-2.5 border border-gray-500 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:border-[#080101] focus:z-10 sm:text-sm"
               value={formData.email}
               onChange={handleChange}
             />
